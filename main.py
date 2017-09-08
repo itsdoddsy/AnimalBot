@@ -8,4 +8,15 @@ async def on_ready():
     print('Logged in as: {} - User ID: {}'.format(client.user.name, client.user.id))
     print('Server invite link: https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=3072'.format(client.user.id))
 
+@client.event
+async def on_message(message):
+    if message.content.startswith('!cat'):
+        # get cat picture
+
+    elif message.content.startswith('!dog'):
+        # get dog picture
+
+    elif message.content.startswith('cat!help'):
+        # display help message
+
 client.run('your_token_here')
